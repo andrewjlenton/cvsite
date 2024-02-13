@@ -10,29 +10,23 @@
             font-family: 'Rubik', sans-serif;
             margin: 0;
             padding: 0;
+            text-align: center;
+        }
+        header, nav, footer {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px 0;
         }
         header {
             background-color: #333;
             color: #fff;
-            padding: 20px;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        h1 {
-            margin: 0;
         }
         nav {
             background-color: #444;
             color: #fff;
             padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            top: 60px;
-            z-index: 1000;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
         nav a {
             color: #fff;
@@ -43,14 +37,34 @@
             background-color: #666;
         }
         section {
+            width: 80%;
+            margin: 20px auto;
             padding: 20px;
-            margin-top: 100px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            text-align: left;
+            display: block;
+        }
+        .toggle-info {
+            display: none;
+        }
+        section h2 {
+            margin-top: 0;
         }
         footer {
+            width: 100%;
             background-color: #333;
             color: #fff;
-            text-align: center;
             padding: 10px 0;
+        }
+        .project-details {
+            overflow: hidden; /* Clear floats */
+        }
+        .project-description {
+            width: 50%;
+            float: left;
+        }
+        img {
             width: 100%;
         }
     </style>
@@ -60,25 +74,36 @@
         <h1>Andrew Lenton</h1>
     </header>
     <nav>
-        <a href="#home">Home</a>
+        <a href="#home">About</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
     </nav>
     <section id="home">
-        <h2>Home</h2>
-        <p>Welcome to my portfolio website.</p>
+        <h2>About</h2>
+        <p>Hi, I am a recent graduate from Keele University. This site is a showcase of some projects I've created.</p>
     </section>
     <section id="portfolio">
         <h2>Portfolio</h2>
-        <p>Movie and TV Show Tracker Application</p>
+
+
+                <p><b>Movie and TV Show Tracker Application</b></p>
+                <p><b>Skills used:</b> C#, MySQL, Integration of API, Winforms Development</p>
+                <p><b>Overview: </b>For this project, I created a desktop application using C# Winforms with the .NET framework that would allow you to track the movies and TV shows you are watching or planning to watch. I used the API of a site called The Movie Database (TMDB) to get the information, which would then be stored locally on a mySQL server.</p>
+                <img src="MovieTrackerImage.PNG" alt="Movie Tracker Application Showcase" width="650" height="400">
+                <iframe width="680" height="350" src="https://www.youtube.com/embed/CS7v99Ge5K4" frameborder="0" allowfullscreen></iframe>
+
+       
+        <p>Other</p>
     </section>
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: andrewlenton000@gmail.com</p>
-        <p>Phone Number: 07410 561 268</p>
+        <h2><center>Contact:</h2>
+            
+            <p><center><h2>✉<a href = "mailto: andrewlenton000@gmail.com"> andrewlenton000@gmail.com</a></p>
+                <p><center><h2>&#128222 07410 561 268</h2></p>
+                
     </section>
     <footer>
-        <p>&copy; 2024 Andrew Lenton</p>
+        <p>&copy; Andrew Lenton</p>
     </footer>
 </body>
 </html>
