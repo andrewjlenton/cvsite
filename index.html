@@ -13,9 +13,9 @@
             text-align: center;
         }
         header, nav, footer {
-            width: 90%;
+            width: 53%;
             margin: 0 auto;
-            padding: 20px 0;
+            padding: 3px 0;
         }
         header {
             background-color: #333;
@@ -37,13 +37,22 @@
             background-color: #666;
         }
         section {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            border: 2px solid #333;
+            width: 65%;
+            margin: 10px auto;
+            padding: 8px;
+            border: 1px solid #333;
             border-radius: 10px;
             text-align: left;
             display: block;
+        }
+        #contact {
+
+            width: 25%;
+            border: 1px solid rgb(255, 0, 255)
+        }
+        #home {
+            width: 55%;
+            border: 1px solid rgb(142, 194, 224);
         }
         .toggle-info {
             display: none;
@@ -57,18 +66,12 @@
             color: #fff;
             padding: 10px 0;
         }
-        .project-details {
-            overflow: hidden; /* Clear floats */
-        }
-        .project-description {
-            width: 50%;
-            float: left;
-        }
         img {
             display: block;
   margin-left: auto;
   margin-right: auto;
             width: 50%;
+            height: 50%;
             margin-bottom: 10px;
         }
 
@@ -86,7 +89,10 @@
     </nav>
     <section id="home">
         <h2>About</h2>
-        <p>Hi, I am a recent graduate from Keele University. This site is a showcase of some projects I've created.</p>
+        <p>Hi, I am a recent Computer Science graduate from Keele University looking to build a career in Computing & IT as well as build upon my skills. <br>
+             This site contains some of the projects I've created over the last few years.
+            <br> My contact details are <a href="#contact">below</a>
+        <br><br>Thanks for visiting!</p>
     </section>
     <section id="portfolio">
         <h2>Portfolio</h2>
@@ -94,18 +100,22 @@
 
                 <p><b>Movie and TV Show Tracker Application</b></p>
                 <p><b>Skills used:</b> C#, MySQL, Integration of API, Winforms Development</p>
-                <p><b>Overview: </b>For this project, I created a desktop application using C# Winforms with the .NET framework that would allow you to track the movies and TV shows you are watching or planning to watch. I used the API of a site called The Movie Database (TMDB) to get the information, which would then be stored locally on a mySQL server.</p>
-                <img src="MovieTrackerImage.PNG" alt="Movie Tracker Application Showcase" width="300" height="300">
-                <center><iframe width="680" height="350" src="https://www.youtube.com/embed/CS7v99Ge5K4" frameborder="0" allowfullscreen></iframe>
+                <p><b>Overview:<br> </b>
+                    Using C# Winforms and the .NET framework I have created a desktop Windows application designed for effortlessly tracking movies and TV shows.
+                     Utilizing The Movie Database (TMDB) API,
+                      users can seamlessly search for their desired content and access comprehensive details. They can add chosen titles to their personal list,
+                    which is stored using a MySQL database.
+                     Moreover, users can mark items as watched, remove them from the list, and even incorporate custom content of their own.</p>
+                     <p><center><b>Screenshot & Demonstration Video:</center></b></p>
+                <img src="MovieTrackerImage.PNG" alt="Movie Tracker Application Showcase">
+                <center><iframe width="60%" height="400px" src="https://www.youtube.com/embed/CS7v99Ge5K4" frameborder="0" allowfullscreen></iframe>
                 </center>
-       
-        <p>Other</p>
     </section>
     <section id="contact">
         <h2><center>Contact:</h2>
             
-            <p><center><h2>✉<a href = "mailto: andrewlenton000@gmail.com"> andrewlenton000@gmail.com</a></p>
-                <p><center><h2>&#128222 07410 561 268</h2></p>
+            <p><center><h4>✉<a href = "mailto: andrewlenton000@gmail.com"> andrewlenton000@gmail.com</a></p>
+                <p><center><h4>&#128222 07410 561 268</h2></p>
                 
     </section>
     <footer>
